@@ -1,0 +1,52 @@
+:root {
+    --main-color: #0d92eb;
+    --font-size-large: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--main-color);
+    font-size: var(--font-size-large);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    flex: 1;
+    padding: 10px;
+    background-color: rgb(225, 230, 173);
+    margin: 5px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-gap: 10px; /* Space between grid items */
+}
+
+.grid-item {
+    background-color: rgb(247, 247, 174);
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(32, 110, 218);
+    color: rgb(228, 244, 175);
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #50a5f0; /* Change Bootstrap primary button color */
+    border-radius: 50px; /* Add custom rounded corners */
+}
+
